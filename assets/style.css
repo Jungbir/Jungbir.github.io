@@ -10,6 +10,7 @@ body {
     background-color: #0D0810;
     color: #F5EFED;
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 }
 
 /* NAV */
