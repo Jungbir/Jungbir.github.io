@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: #201f21;
+    color: rgb(111, 111, 111);
+}
+
+.Title {
+    font-size: 32px;
+    color: aliceblue;
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+#navUl {
+    width: 30%;
+    height: 50px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid white; */
+    border-radius: 40px;
+    font-size: 24px;
+    gap: 2rem;
+    color: aliceblue;
+}
+
+.navGlass {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(128, 128, 128, 0.142);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: 0.5555s;
+}
+
+.navLinks {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navLinks:hover {
+    border-radius: 20px;
+    background: rgba(128, 128, 128, 0.5);
+    padding: 5px;
+}
+
+#Home {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent 0%, transparent, black, black, black 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url(https://images.unsplash.com/photo-1670884307115-ab10e0498cc6?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 120%;
+}
+
+#homeContainer {
+    width: 70%;
+    height: 60%;
+    position: relative;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#hCBold {
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#hCBoldLower {
+    color: aliceblue;
+}
+
+#hCJob {
+    color: rgb(128, 0, 255);
+}
+
+#hCSmall {
+    font-size: 20px;
+}
+
+
+
+#About {
+    width: 100vw;
+    height: 50vh;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font: 20px;
+}
+
+
+#about_Container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Projects {
+    width: 100vw;
+    height: 50vh;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font: 20px;
+}
+
+#Projects_Container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ContactMe {
+    width: 100vw;
+    height: 50vh;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font: 20px;
+}
+
+#ContactMe_Container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
