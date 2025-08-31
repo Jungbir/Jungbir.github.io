@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #222222;
   --foreground: #171717;
+  overscroll-behavior: none;
 }
 
 @theme inline {
@@ -23,4 +24,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* prevents scrollbars */
+  overscroll-behavior: none; /* disables pull-to-refresh, etc. */
+}
+
+.granim-text {
+  background: url(#granim-canvas);
+  background-clip: text;
+  -webkit-background-clip: text; /* For cross-browser compatibility */
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; /* Standard property */
 }
